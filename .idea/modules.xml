@@ -2,18 +2,28 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Marsel31/Code31/Code31.iml" filepath="$PROJECT_DIR$/Marsel31/Code31/Code31.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson 25. Marsel/Home.iml" filepath="$PROJECT_DIR$/Lesson 25. Marsel/Home.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson8/HomeWork/HomeWork.iml" filepath="$PROJECT_DIR$/Lesson8/HomeWork/HomeWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HomeWork1/HomeWork1.iml" filepath="$PROJECT_DIR$/HomeWork1/HomeWork1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson10/lesson10_code/Homework9/Homework9.iml" filepath="$PROJECT_DIR$/lesson10/lesson10_code/Homework9/Homework9.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Homework9.2/Homework9.2.iml" filepath="$PROJECT_DIR$/Homework/Homework9.2/Homework9.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Homework9.3/Homework9.3.iml" filepath="$PROJECT_DIR$/Homework/Homework9.3/Homework9.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kirill/Kirill_01/Kirill_01.iml" filepath="$PROJECT_DIR$/Kirill/Kirill_01/Kirill_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson14/Lesson14_code/Lesson14_code.iml" filepath="$PROJECT_DIR$/Lesson14/Lesson14_code/Lesson14_code.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson9/Lesson9.iml" filepath="$PROJECT_DIR$/Lesson9/Lesson9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Marsel32/Marsel32.iml" filepath="$PROJECT_DIR$/Marsel32/Marsel32.iml" />
       <module fileurl="file://$PROJECT_DIR$/PS.iml" filepath="$PROJECT_DIR$/PS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Task26/Task26.iml" filepath="$PROJECT_DIR$/Task26/Task26.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Task31/Task31.iml" filepath="$PROJECT_DIR$/Task31/Task31.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson34/_code/_code.iml" filepath="$PROJECT_DIR$/lesson34/_code/_code.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson20/code/code.iml" filepath="$PROJECT_DIR$/lesson20/code/code.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson10/lesson10_code/homeWork10.2/homeWork10.2.iml" filepath="$PROJECT_DIR$/lesson10/lesson10_code/homeWork10.2/homeWork10.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson11/homeWork11/homeWork11.iml" filepath="$PROJECT_DIR$/lesson11/homeWork11/homeWork11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson8/homeWork2/homeWork2.iml" filepath="$PROJECT_DIR$/Lesson8/homeWork2/homeWork2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homeWork29_marsel/homeWork29_marsel.iml" filepath="$PROJECT_DIR$/homeWork29_marsel/homeWork29_marsel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/homeWork3/homeWork3.iml" filepath="$PROJECT_DIR$/Homework/homeWork3/homeWork3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson 40_marsel/lesson 40_marsel.iml" filepath="$PROJECT_DIR$/lesson 40_marsel/lesson 40_marsel.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson10/lesson10_code/lesson10.iml" filepath="$PROJECT_DIR$/lesson10/lesson10_code/lesson10.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson11/lesson11code/lesson11code.iml" filepath="$PROJECT_DIR$/lesson11/lesson11code/lesson11code.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson15/Massiv/lesson15 code.iml" filepath="$PROJECT_DIR$/lesson15/Massiv/lesson15 code.iml" />
@@ -26,9 +36,14 @@
       <module fileurl="file://$PROJECT_DIR$/lesson23/lesson23_code/lesson23_code.iml" filepath="$PROJECT_DIR$/lesson23/lesson23_code/lesson23_code.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson24/lesson24_code/lesson24_code.iml" filepath="$PROJECT_DIR$/lesson24/lesson24_code/lesson24_code.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson25/lesson25_code/lesson25_code.iml" filepath="$PROJECT_DIR$/lesson25/lesson25_code/lesson25_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson26marsel/lesson26marsel.iml" filepath="$PROJECT_DIR$/lesson26marsel/lesson26marsel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson28_Marsel/lesson28_Marsel.iml" filepath="$PROJECT_DIR$/lesson28_Marsel/lesson28_Marsel.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson28/lesson28_code/lesson28_code.iml" filepath="$PROJECT_DIR$/lesson28/lesson28_code/lesson28_code.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson29/lesson29.iml" filepath="$PROJECT_DIR$/lesson29/lesson29.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson/lesson29_Marsel.iml" filepath="$PROJECT_DIR$/lesson/lesson29_Marsel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson31_marsel/lesson31_marsel.iml" filepath="$PROJECT_DIR$/lesson31_marsel/lesson31_marsel.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson32/lesson32_code/lesson32_code.iml" filepath="$PROJECT_DIR$/lesson32/lesson32_code/lesson32_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson35_marsel/lesson35_marsel.iml" filepath="$PROJECT_DIR$/lesson35_marsel/lesson35_marsel.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson13/code/while_loop_practice.iml" filepath="$PROJECT_DIR$/lesson13/code/while_loop_practice.iml" />
     </modules>
   </component>
