@@ -5,63 +5,58 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Dictionary {
-
   private static final String SEP = ":";
 
-  private static final Map<String,String> prices = readFromFile("res/dict.txt");
-
   public static void main(String[] args) {
+    Map<String, String> dictionary = readDictionaryFromFile("res/dict.txt");
 
-  Scanner scanner = new Scanner(System.in);
-    System.out.print("Введите количество поисковых слов: ");
-  int m = Integer.parseInt(scanner.nextLine());
-    for (int i = 0; i < m; i++) {
-    System.out.print("Введите слово для поиска: ");
-    String word = scanner.nextLine().toLowerCase();
-    if (Dictionary.containsKey(word)) {
-      System.out.println(Dictionary.get(word));
-    } else {
-      System.out.println("Не найдено");
+    Scanner scanner = new Scanner(System.in);
+    int m = dictionary.size();
+
+    if (m == 0) {
+      System.out.println("Словарь пуст.");
+      scanner.close();
+      return;
     }
-  }
+
+    System.out.println("Количество слов в словаре: " + m);
+    System.out.println("Слова из словаря:");
+
+    for (String word : dictionary.keySet()) {
+      System.out.println("- " + word);
+    }
+
+    System.out.print("Введите количество поисковых слов: ");
+    int numSearchWords = Integer.parseInt(scanner.nextLine());
+
+    for (int i = 0; i < numSearchWords; i++) {
+      System.out.print("Введите слово для поиска: ");
+      String searchWord = scanner.nextLine().toLowerCase();
+      if (dictionary.containsKey(searchWord)) {
+        System.out.println(dictionary.get(searchWord));
+      } else {
+        System.out.println("Не найдено");
+      }
+    }
     scanner.close();
-}
-
-  private final String word;
-  private final String value;
-
-  public Dictionary(String word, String value) {
-    this.word = word;
-    this.value = value;
   }
 
-  private static Map<String, String> readFromFile(String filename) {
-    Map<String, String> result = new HashMap<>();
-    File dictionaryFile = new File(filename);
-    try {
-      Scanner scanner = new Scanner(dictionaryFile);
-      while (scanner.hasNextLine()) {
+  private static Map<String, String> readDictionaryFromFile(String filename) {
+    Map<String, String> dictionary = new HashMap<>();
+    try (Scanner scanner = new Scanner(new File(filename))) {
+      int n = Integer.parseInt(scanner.nextLine());
+      for (int i = 0; i < n; i++) {
         String line = scanner.nextLine();
-        String[] cells = line.split(SEP);
-        try {
-          if (cells.length >= 2) {
-            String word = cells[0];
-            String value = cells[1];
-            result.put(word, value);
-          } else {
-            System.out.println("Некорректная строка файла: " + line);
-          }
-        } catch (ArrayIndexOutOfBoundsException e) {
-          System.out.println("Некорректная строка файла: " + line);
+        String[] parts = line.split(SEP, 2); // Указываем максимальное количество элементов после разделителя
+        if (parts.length == 2) {
+          String word = parts[0].toLowerCase();
+          String value = parts[1];
+          dictionary.put(word, value);
         }
       }
-      scanner.close();
     } catch (FileNotFoundException e) {
-      System.out.println("Не найден файл: " + filename);
+      System.out.println("Файл не найден: " + e);
     }
-    return result;
+    return dictionary;
   }
 }
-
-
-
