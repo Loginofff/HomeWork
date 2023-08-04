@@ -8,7 +8,7 @@ public class Dictionary {
   private static final String SEP = ":";
 
   public static void main(String[] args) {
-    Map<String, String> dictionary = readDictionaryFromFile("res/dict.txt");
+    Map<String, String> dictionary = readDictionaryFromFile();
 
     Scanner scanner = new Scanner(System.in);
     int m = dictionary.size();
@@ -32,18 +32,14 @@ public class Dictionary {
     for (int i = 0; i < numSearchWords; i++) {
       System.out.print("Введите слово для поиска: ");
       String searchWord = scanner.nextLine().toLowerCase();
-      if (dictionary.containsKey(searchWord)) {
-        System.out.println(dictionary.get(searchWord));
-      } else {
-        System.out.println("Не найдено");
-      }
+      System.out.println(dictionary.getOrDefault(searchWord, "Не найдено"));
     }
     scanner.close();
   }
 
-  private static Map<String, String> readDictionaryFromFile(String filename) {
+  private static Map<String, String> readDictionaryFromFile() {
     Map<String, String> dictionary = new HashMap<>();
-    try (Scanner scanner = new Scanner(new File(filename))) {
+    try (Scanner scanner = new Scanner(new File("res/dict.txt"))) {
       int n = Integer.parseInt(scanner.nextLine());
       for (int i = 0; i < n; i++) {
         String line = scanner.nextLine();
